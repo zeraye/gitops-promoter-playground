@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev
+  namespace: argocd
+  labels:
+    promoter.argoproj.io/has-promotionstrategy: "true"
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: default
+  sourceHydrator:
+    drySource:
+      path: environment/dev
+      repoURL: https://github.com/zeraye/gitops-promoter-playground
+      targetRevision: HEAD
+    hydrateTo:
+      targetBranch: environments/dev-next
+    syncSource:
+      path: dev
+      targetBranch: environments/dev
