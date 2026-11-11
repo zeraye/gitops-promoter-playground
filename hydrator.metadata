@@ -1,0 +1,7 @@
+{
+  "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
+  "drySha": "b5c9509ee58985f6303ee271131a6a51e9596c95",
+  "author": "Jakub Rudnik <jakub@rudnik.io>",
+  "date": "2026-11-11T20:05:57Z",
+  "subject": "feat: restructure environment configuration files with ConfigMap format"
+}
