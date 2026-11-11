@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  hello: world4
+  this-value-should-be-overridden: dev
+  this-value-will-not-differ: between-environments
+kind: ConfigMap
+metadata:
+  name: environment-config
