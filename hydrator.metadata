@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
-  "drySha": "93028d5f1c339337af2e49953c76bdf191c79152",
+  "drySha": "0ac298782ca191d995b7d68d3feb731d812d4fb7",
   "author": "Jakub Rudnik <jakub@rudnik.io>",
-  "date": "2026-11-11T20:37:18Z",
-  "subject": "fix: update value of 'hello' in override.yaml to 'world3'"
+  "date": "2026-11-11T20:44:41Z",
+  "subject": "fix: update value of 'hello' in override.yaml to 'world4'"
 }
