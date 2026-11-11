@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
-  "drySha": "124bf287f0d73307f4047232d69321908e2522d9",
+  "drySha": "48893ef195685c9cc38a18f9209a061cdb172f5a",
   "author": "Jakub Rudnik <jakub@rudnik.io>",
-  "date": "2026-11-11T21:04:58Z",
-  "subject": "fix: add namespace to ConfigMap metadata in environment override files"
+  "date": "2026-11-11T21:20:46Z",
+  "subject": "fix: update value of 'hello' in override.yaml to 'world6'"
 }
