@@ -1,6 +1,6 @@
 {
   "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
-  "drySha": "62730a13c2b144375591a5110b4772df0949fc17",
+  "drySha": "124bf287f0d73307f4047232d69321908e2522d9",
   "commands": [
     "kustomize build ./environment/dev"
   ]
