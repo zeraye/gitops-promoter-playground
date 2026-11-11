@@ -2,11 +2,9 @@ name: Argo CD Diff Preview
 
 on:
   pull_request:
+    types: [opened]
     branches:
-      - environments/dev
-      - environments/test
-      - environments/prod1
-      - environments/prod2
+      - master
 
 jobs:
   build:
