@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
-  "drySha": "b5c9509ee58985f6303ee271131a6a51e9596c95",
+  "drySha": "61ad5d3b80a5bd94c0ef5529b10afbe16c014706",
   "author": "Jakub Rudnik <jakub@rudnik.io>",
-  "date": "2026-11-11T20:05:57Z",
-  "subject": "feat: restructure environment configuration files with ConfigMap format"
+  "date": "2026-11-11T20:34:44Z",
+  "subject": "fix: remove duplicate entry in override.yaml"
 }
