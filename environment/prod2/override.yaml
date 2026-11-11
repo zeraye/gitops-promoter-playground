@@ -1,1 +1,6 @@
-this-value-should-be-overridden: prod2
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: environment-config
+data:
+  this-value-should-be-overridden: prod2

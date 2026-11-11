@@ -1,2 +1,7 @@
-this-value-will-not-differ: between-environments
-this-value-should-be-overridden: override-me
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: environment-config
+data:
+  this-value-will-not-differ: between-environments
+  this-value-should-be-overridden: override-me
