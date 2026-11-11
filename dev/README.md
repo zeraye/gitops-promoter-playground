@@ -5,6 +5,6 @@ To hydrate the manifests in this repository, run the following commands:
 ```shell
 git clone https://github.com/zeraye/gitops-promoter-playground
 # cd into the cloned directory
-git checkout 0ac298782ca191d995b7d68d3feb731d812d4fb7
+git checkout 62730a13c2b144375591a5110b4772df0949fc17
 kustomize build ./environment/dev
 ```
