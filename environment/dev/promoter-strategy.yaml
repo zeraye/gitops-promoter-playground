@@ -1,0 +1,31 @@
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: PromotionStrategy
+metadata:
+  name: demo
+  namespace: default
+spec:
+  orderCommitStatusRef:
+    group: promoter.argoproj.io
+    kind: DependentsSuccessfulCommitStatus
+    name: demo
+  environments:
+    - autoMerge: false
+      branch: environments/dev
+    # - autoMerge: false
+    #   branch: environments/test
+    # - autoMerge: false
+    #   branch: environments/prod1
+    # - autoMerge: false
+    #   branch: environments/prod2
+  gitRepositoryRef:
+    name: gitops-promoter-gitrepository
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: DependentsSuccessfulCommitStatus
+metadata:
+  name: demo
+  namespace: default
+spec:
+  key: dependents-successful
+  promotionStrategyRef:
+    name: demo
