@@ -4,4 +4,4 @@ metadata:
   name: environment-config
 data:
   this-value-should-be-overridden: dev
-  hello: world
+  hello: world2
