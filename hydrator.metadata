@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/zeraye/gitops-promoter-playground",
-  "drySha": "48893ef195685c9cc38a18f9209a061cdb172f5a",
+  "drySha": "9919e4729af4327e6d5400b45f840b90adf10e28",
   "author": "Jakub Rudnik <jakub@rudnik.io>",
-  "date": "2026-11-11T21:20:46Z",
-  "subject": "fix: update value of 'hello' in override.yaml to 'world6'"
+  "date": "2026-11-11T21:52:05Z",
+  "subject": "feat: add promoter strategy configuration and dependents successful commit status"
 }

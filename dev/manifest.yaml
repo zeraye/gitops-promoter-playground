@@ -1,9 +1,35 @@
 apiVersion: v1
 data:
-  hello: world6
+  hello: world7
   this-value-should-be-overridden: dev
   this-value-will-not-differ: between-environments
 kind: ConfigMap
 metadata:
   name: environment-config
   namespace: default
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: DependentsSuccessfulCommitStatus
+metadata:
+  name: demo
+  namespace: default
+spec:
+  key: dependents-successful
+  promotionStrategyRef:
+    name: demo
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: PromotionStrategy
+metadata:
+  name: demo
+  namespace: default
+spec:
+  environments:
+    - autoMerge: false
+      branch: environments/dev
+  gitRepositoryRef:
+    name: gitops-promoter-gitrepository
+  orderCommitStatusRef:
+    group: promoter.argoproj.io
+    kind: DependentsSuccessfulCommitStatus
+    name: demo
