@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  hello: world
+  hello: world2
   this-value-should-be-overridden: dev
   this-value-will-not-differ: between-environments
 kind: ConfigMap
